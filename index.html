@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <title>PERMAINAN MENGURUTKAN ANGKA</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+      <header>
+        <img id="logo" src="/bground.jpg" alt="permainan mengurutkan angka" title="Permainan mengurutkan angka" />
+       
+    </header>
+     
+      
+      <div class="game">
+        <br><b><center>PERMAINAN MENGURUTKAN ANGKA</center></b><br><br>
+
+<div class="jam-digital">
+ <div class="kotak">
+  <p id="jam"></p>
+ </div>
+ <div class="kotak">
+  <p id="menit"></p>
+ </div>
+ <div class="kotak">
+  <p id="detik"></p>
+ </div>
+
+
+<script>
+ window.setTimeout("waktu()", 1000);
+ function waktu() {
+  var waktu = new Date();
+  setTimeout("waktu()", 1000);
+  document.getElementById("jam").innerHTML = waktu.getHours();
+  document.getElementById("menit").innerHTML = waktu.getMinutes();
+  document.getElementById("detik").innerHTML = waktu.getSeconds();
+ }
+</script>
+</div>
+
+        <div style="margin: 5px 20px 20px;">
+       
+          <div class="smallfont" style="margin-bottom: 2px;"><br>
+          <input value="Buka" style="margin: 0px; padding: 0px; width: 55px; font-size: 12px;" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Tutup'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Buka'; }" type="button">
+            </div>
+          <div class="alt2" style="border: 1px inset ; margin: 0px; padding: 2px; max-width: 324px;">
+          <div style="display: none;">
+          <br>
+
+        <div class="footer">
+          <span id="move">Jumlah langkah: 100</span>
+          <button>Play</button>
+          <span id="time">Waktu: 100</span>
+        </div><br>
+
+        <div class="grid">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>10</button>
+          <button>11</button>
+          <button>12</button>
+          <button>13</button>
+          <button>14</button>
+          <button>15</button>
+          <button></button>
+        </div>
+        
+       <br>
+          <ol>
+            <li>Urutkan angka-angka dalam kotak diatas dari mulai angka terkecil hingga angka terbesar</li>
+            <li>Urutannya dimulai dari baris paling atas, berurutan dari kiri ke-kanan.</li>
+            <li>Gunakan klik Mouse untuk menggeser posisi angka disekitar kotak yang Kosong.</li>
+            <li>Waktu akan mulai berjalan ketika anda klik tombol PLAY. </li>
+            <li>Setelah semua angka berurutan, maka akan ditampilkan jumlah Langkah yang anda lakukan dan Waktu yang anda habiskan.</li>
+            <li>Semakin sedikit Langkah, dan semakin sedikit Waktu yang anda butuhkan untuk menyelesaikan permainan ini maka semakin baik Nilai anda.</li>
+            
+          </ol>
+           <br>
+          </div>
+          </div>
+        
+          <img src="/logo.jpg" alt="permainan mengurutkan angka" width="99%" height="98%" title="Permainan ini disusun untuk memenuhi tugas Final Project kelas FullStack JS Hacktiv8 Batch RMT-008 an. Wahyu Winoto" />
+        </div>
+         
+      </div>
+          <iframe width="100%" height="140" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/76461347&color=%23ff5500&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"></iframe>
+       
+
+      <h1 class="message">Selamat anda menang !</h1>
+      <script src="script.js"></script>
+
+      <img id="logo" src="/bground.jpg" width="100%" alt="permainan mengurutkan angka" title="Permainan mengurutkan angka"/>
+     
+  </body>
+</html>
